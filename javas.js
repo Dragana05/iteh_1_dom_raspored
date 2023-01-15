@@ -18,3 +18,22 @@ $("#dodajbutton").click(function () {
 
 
 });
+
+
+
+$(".fa-solid").click(function () {
+
+    $.ajax({
+        url: 'skripte/obrisidb.php',
+        type: 'get',
+        data: {
+            stavka_id: $(this).attr('id'),
+        },
+
+    }).done(function () {
+        alert("Uspešno obrisana stavka!");
+    }).fail(function (jqXHR, ajaxOptions, thrownError) {
+        alert(jqXHR.responseText);
+    })
+
+});
