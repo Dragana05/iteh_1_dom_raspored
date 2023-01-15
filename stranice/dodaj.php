@@ -43,7 +43,7 @@
             </div>
 
 
-            
+
             <div class="form mb-2">
                 <label>Datum: </label>
                 <input type="text" class="form-control" id="datum">
@@ -63,6 +63,10 @@
         </button>
 
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../javas.js"></script>
 </body>
 
 </html>
