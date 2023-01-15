@@ -37,3 +37,25 @@ $(".fa-solid").click(function () {
     })
 
 });
+
+
+
+
+$("#srchraspored").keyup(function () {
+
+
+    $.ajax({
+        url: 'skripte/srchdb.php',
+        type: 'get',
+        data: {
+            srch: $(this).val(),
+        },
+
+    }).done(function (data) {
+        $('.rasporedtable').html(data);
+
+    }).fail(function (jqXHR, ajaxOptions, thrownError) {
+        alert(jqXHR.responseText);
+    })
+
+});
