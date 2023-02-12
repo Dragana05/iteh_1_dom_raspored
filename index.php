@@ -15,7 +15,7 @@
 
     <div class="container">
 
-        <h1 class="text-center mt-4">Raspored učenja</h1>
+        <h1 class="text-center mt-4">Moj Raspored učenja</h1>
 
         <a href="stranice/dodaj.php">
             <button class="btn btn-primary btn-lg" id="dodajbutton">
